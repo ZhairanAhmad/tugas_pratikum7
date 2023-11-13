@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    h2{
+        text-align: center;
+        background-color: aquamarine;
+        border-radius: 250%;
+    }
+body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  background-color: gainsboro;
+  border-style: none;
+  width: 300px;
+  margin: 0 auto;
+}
+
+input[type="text"], input[type="alamat"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type="text"]:focus, input[select="status"]:focus {
+  border: 3px solid #555;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 1px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<body>
+
+<h2>FORM ENTRY DATA PEGAWAI</h2>
+
+<form action="/submit_form">
+  <label for="fname">Nama lengkap:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="Nama lengkap Anda"><br>
+
+  <label for="lname">NIK</label><br>
+  <input type="text" id="lname" name="lname" placeholder="NIK Anda"><br>
+
+  <label for="ttl">Tempat Tanggal Lahir</label>
+  <input type="text" id="ttl" name="ttl" placeholder="Tempat Tanggal Lahir Anda"><br>
+
+  <label for="email">Email/No Telpon</label><br>
+  <input type="text" id="email" name="email" placeholder="Email/No Telpon Anda"><br>
+
+  <label for="alamat">Alamat</label><br>
+  <input type="text" id="alamat" name="alamat" placeholder="Alamat Anda"><br>
+
+  <label for="jabatan">Jabatan</label><br>
+  <select name="jabatan" id="jabatan">
+    <option value="">Direksi</option>
+    <option value="">Direktur</option>
+    <option value="">Manager</option>
+  </select>
+
+  <label for="Status"><br>Status</label><br>
+  <select name="Status" id="Status">
+    <option value="">Aktif</option>
+    <option value="">Tidak Aktif</option>
+  </select>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
